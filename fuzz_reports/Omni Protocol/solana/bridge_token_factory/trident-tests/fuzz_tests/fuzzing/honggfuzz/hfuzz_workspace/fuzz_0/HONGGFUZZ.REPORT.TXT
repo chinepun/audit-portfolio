@@ -1,0 +1,336 @@
+=====================================================================
+TIME: 2024-12-01.19:48:03
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: c2d6c3071fa8e00039a3645faae106d0.0000001e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.1bd78dceb0.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 288248
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000001bd78dceb0
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x0000555556328aba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555651749> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555862856> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635cceb> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ca45> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635c9a9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635c993> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed821> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556c3f72> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556b20b1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569eeef> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb2a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb08> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556328700> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb5d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b2a5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-01.19:57:51
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: ebddabf93cf126f3181d82846aa7a003.0000005b.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.1a1c835e91.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 297445
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000001a1c835e91
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x0000555556328ada> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555651749> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555862876> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635cd0b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ca65> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635c9c9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635c9b3> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed821> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556c3f92> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556b20d1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569eeef> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb2a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb08> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556328720> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb5d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b2a5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-01.20:42:08
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 15883780d8d2800076b1b000a2280094.0000000a.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.1a0f2595b8.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 339854
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000001a0f2595b8
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x0000555556328c0a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555651749> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555862846> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ce3b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635cb95> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635caf9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635cae3> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed821> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556c3f62> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556b20a1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569ee9f> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb2a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb08> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556328850> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb5d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b2a5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-02.09:35:12
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 0ff969360ddf0f464b9f0c3f42c049ec.0000001f.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.ca437e1b7.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 91641
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000ca437e1b7
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x0000555556326b5a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555651519> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555862ca6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ad8b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635aae5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635aa49> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635aa33> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed5f1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555edc05> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ea61d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556bc657> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569f3dd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569c8fa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569c8d8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555563267a0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569c92d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b075> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-02.09:42:25
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: f4b98f8000002da9c02ca321d0008719.00000029.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.c7ee14987.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 97365
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000c7ee14987
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632936a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556517d9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555863136> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635d59b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635d2f5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635d259> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635d243> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed8b1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555edec5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb02d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556c8536> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556bc970> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569f69d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cbba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cb98> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556328fb0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555569cbed> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b335> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-02.12:26:30
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 0ff969360ddf0f464b9f0c3f42c049ec.0000001f.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.1b88a7e9d3.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 303272
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000001b88a7e9d3
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632af7a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556518a9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555864d46> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f1ab> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef05> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee69> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee53> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed981> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555edf95> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eba5d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555576ed02> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555760232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555574399f> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557405da> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557405b8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632abc0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555574060d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b405> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-12-02.12:39:41
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 3084cf5130925725f2dd663eef4f816a.00000029.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.1b969662cd.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 317352
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000001b969662cd
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632afaa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556518a9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555864d76> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f1db> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef35> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee99> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee83> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555ed981> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555edf95> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eba5d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555576ed32> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555760275> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555574399f> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557405da> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557405b8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632abf0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555574060d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555565b405> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/omni-bridge/solana/bridge_token_factory/trident-tests/fuzz_tests/fuzzing/honggfuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
