@@ -1,0 +1,1 @@
+Trident version used: [0.8.1](https://github.com/Ackee-Blockchain/trident/releases/tag/0.8.1)

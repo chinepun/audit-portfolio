@@ -9,3 +9,5 @@ For the detailed Task description see [Task 1: Fuzz a Solana Program](https://gi
 # Solution:
 
 Check the `project-fuzzing/` folder to see the raydium cp-swap task completed
+
+Trident version used: [0.8.0](https://github.com/Ackee-Blockchain/trident/releases/tag/0.8.0)
